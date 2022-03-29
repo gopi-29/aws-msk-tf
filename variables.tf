@@ -1,0 +1,34 @@
+variable "certificate_common_name" {}
+variable "certificate_key_algorithm" {}
+variable "certificate_signing_algorithm" {}
+variable "cloudwatch_logs_enabled" {}
+variable "log_group_retention" {}
+variable "s3_logs_enabled" {}
+variable "broker_count" {}
+variable "client_sasl_iam_enabled" {}
+variable "client_sasl_scram_enabled" {}
+variable "client_tls_auth_enabled" {}
+variable "enhanced_monitoring" {}
+variable "jmx_exporter_enabled" {}
+variable "kafka_ebs_volume_size" {}
+variable "kafka_instance_type" {}
+variable "kafka_properties" {}
+variable "kafka_version" {}
+variable "node_exporter_enabled" {}
+variable "subnet_ids" {
+  type = list(string)
+}
+variable "msk_plain_port" {}
+variable "msk_tls_port" {}
+variable "msk_sasl_scram_port" {}
+variable "msk_sasl_iam_port" {}
+variable "zk_plain_port" {}
+variable "zk_tls_port" {}
+variable "jmx_exporter_port" {}
+variable "node_exporter_port" {}
+variable "aws_region" {}
+variable "msk_custom_config" {}
+variable "msk_password" {
+  sensitive = true
+}
+variable "msk_user" {}
